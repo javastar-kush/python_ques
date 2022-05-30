@@ -1,0 +1,16 @@
+N = int(input("Enter a number: "))
+sum = 0
+temp = N
+while(N):
+    k = 1
+    fact = 1
+    r = N % 10
+    while(k <= r):
+        fact = fact * k
+        k = k + 1
+    sum = sum + fact
+    N = N//10
+if(sum == temp):
+    print(str(temp) + " is a strong number")
+else:
+    print(str(temp) + " is not a strong number")
